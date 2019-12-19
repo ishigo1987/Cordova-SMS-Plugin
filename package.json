@@ -7,7 +7,10 @@
       "android"
     ]
   },
-  "repository": "https://github.com/rampicos/Cordova-SMS-Plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishigo1987/Cordova-SMS-Plugin.git"
+  },
   "keywords": [
     "cordova",
     "cordova-android"
