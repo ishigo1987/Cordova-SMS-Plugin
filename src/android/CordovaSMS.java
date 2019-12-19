@@ -70,7 +70,7 @@ public class CordovaSMS extends CordovaPlugin {
                                     Intent intent = new Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT);
                                     intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, defaultPackage);
                                     cordova.getActivity().startActivityForResult(intent,0);
-                                    //callbackContext.success("success");
+                                    callbackContext.success("success");
                             }
                         } catch (JSONException e) {
                              e.printStackTrace();
