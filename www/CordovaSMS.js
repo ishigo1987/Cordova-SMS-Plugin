@@ -11,14 +11,13 @@ CordovaSMS.prototype.sendSMS = function(recipient, message, success, error ){
 }
 
 CordovaSMS.prototype.onSMS = function(callback){
-    console.log(callback)
     CordovaSMS.prototype.onSMSReceived = callback;
 }
 
 //Default SMS receving callback
 CordovaSMS.prototype.onSMSReceived = function(message){
     console.log("Received SMS")
-    console.log(json.stringify(message))
+    console.log(message)
 }
 
 CordovaSMS.prototype.checkDefault= function(success, error ){
