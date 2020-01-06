@@ -1,7 +1,7 @@
 var exec = require('cordova/exec');
 
 function CordovaSMS() { 
-    console.log("CordovaSMS.js: is created");
+//     console.log("CordovaSMS.js: is created");
     exec(function(){}, function(){}, "CordovaSMS", 'initalize', []);
     
 }
@@ -11,13 +11,14 @@ CordovaSMS.prototype.sendSMS = function(recipient, message, success, error ){
 }
 
 CordovaSMS.prototype.onSMS = function(callback){
+    console.log(callback)
     CordovaSMS.prototype.onSMSReceived = callback;
 }
 
 //Default SMS receving callback
 CordovaSMS.prototype.onSMSReceived = function(message){
     console.log("Received SMS")
-    console.log(message)
+    console.log(json.stringify(message))
 }
 
 CordovaSMS.prototype.checkDefault= function(success, error ){
